@@ -38,6 +38,14 @@
     --copyright: #A18268;    
 }
 
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+}
+
 body{
     background-color: gray;
     color: var(--all-text);
@@ -45,6 +53,14 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .hero-text-section-1 h1{
@@ -52,12 +68,33 @@ body{
     text-align: center;
     font-weight: 900;   
     font-size: 128px;
+    padding: 272px 0;
+    margin-bottom: 0;
     
 }
 
 .hero-text-section-1 span{
     color: var(--main-green-dark);
    
+}
+.section{
+    padding: 48px 0;
+}
+
+.traditions-section{
+    padding-top: 96px;
+}
+
+.new-format{
+    margin-bottom: 42px;
+}
+
+.section-3-and-4-h2-margin-botom{
+    margin-bottom: 80px;
+}
+
+.section-4-h2-mar-bot{
+    margin-bottom: 16px;
 }
 
 ul{
@@ -106,6 +143,7 @@ h4{
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
+    padding: 16px 32px;
 }
 
 .call-button:active {
@@ -122,7 +160,7 @@ h4{
     font-size: 20px;
 }
 
-.traditions-section-2 span{
+.traditions-section-h2-p span{
     color: var(--main-green-dark);
 }
 .section-2-uppercase{
