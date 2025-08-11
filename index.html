@@ -10,19 +10,21 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="/">
-            <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
-          </a>
-          <ul class="top-and-footer-menu">
-            <li><a href="#traditions-section">Наші традиції</a></li>
-            <li><a href="#chief-section">Шеф-кухарі</a></li>
-            <li><a href="#formats-section">Формати</a></li>
-            <li><a href="#contacts-sections">Контакти</a></li>
-          </ul>
-        </nav>
-        <!-- кнопочка замовити меню -->
-        <button class="call-button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header-nav-flex">
+            <a href="/">
+              <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
+            </a>
+            <ul class="top-and-footer-menu top-menu-flex">
+              <li><a href="#traditions-section">Наші традиції</a></li>
+              <li><a href="#chief-section">Шеф-кухарі</a></li>
+              <li><a href="#formats-section">Формати</a></li>
+              <li><a href="#contacts-sections">Контакти</a></li>
+            </ul>
+          </nav>
+          <!-- кнопочка замовити меню -->
+          <button class="call-button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
 
@@ -32,7 +34,7 @@
           <h1><span>Сучасна</span> пекарня</h1>
         </div>
       </section>
-      <section>
+      <section class="section-1">
         <div class="container">
           <ul class="top-section-2">
             <li>Великий попит на ринку</li>
@@ -43,21 +45,27 @@
       </section>
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <h2 class="new-format">Новий формат традицій</h2>
-          <p class="traditions-section-h2-p">
-            <span class="section-2-uppercase">shop bakery</span> — це пекарня,
-            яка взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів.
-          </p>
-          <p class="traditions-section-h2-p">
-            Ми працюємо як найвідоміші мережі—
-            <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
-            стильний дизайн та висока якість обслуговування!
-          </p>
-          <img
-            src="./images/baker-man.jpg"
-            alt="Чоловік пекар дивиться на батони із посмішкою"
-          />
+          <div class="flex-section-2">
+            <div>
+              <h2 class="new-format">Новий формат традицій</h2>
+              <p class="traditions-section-h2-p">
+                <span class="section-2-uppercase">shop bakery</span> — це
+                пекарня, яка взяла все найкраще, і зберегла смак традиційної
+                випічки та натуральність інгредієнтів.
+              </p>
+              <p class="traditions-section-h2-p">
+                Ми працюємо як найвідоміші мережі—<br />
+                <span>5 хвилин і замовлення готове</span>. <br />
+                А ще у наших пекарень стильний дизайн<br />
+                та висока якість обслуговування!
+              </p>
+            </div>
+
+            <img
+              src="./images/baker-man.jpg"
+              alt="Чоловік пекар дивиться на батони із посмішкою"
+            />
+          </div>
         </div>
       </section>
       <section class="section" id="chief-section">
@@ -91,8 +99,8 @@
       <section class="formats-section-3 section" id="formats-section">
         <div class="container">
           <h2 class="section-3-and-4-h2-margin-botom">Формати</h2>
-          <ul>
-            <li>
+          <ul class="flex-section-3-ul">
+            <li class="flex-section-3-ul-li">
               <article>
                 <h4 lang="en">Walrus</h4>
                 <p>
@@ -102,7 +110,7 @@
                 </p>
               </article>
             </li>
-            <li>
+            <li class="flex-section-3-ul-li">
               <article>
                 <h4 lang="en">Horseshoe</h4>
                 <p>
@@ -112,7 +120,7 @@
                 </p>
               </article>
             </li>
-            <li>
+            <li class="flex-section-3-ul-li">
               <article>
                 <h4 lang="en">Handlebar</h4>
                 <p>
