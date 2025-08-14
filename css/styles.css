@@ -35,7 +35,9 @@
     --main-green-light: #FAF4EA;
     --all-text: #31261A;
     --h2-span: #465929;
-    --copyright: #A18268;    
+    --copyright: #A18268;  
+    --psevdo-line:#cfcfbc;
+    --secondary: #a18268;
 }
 
 *{
@@ -72,10 +74,11 @@ h4{
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
+    color: var(--main-green-light);
 }
 
 body{
-    background-color: gray;
+    background-color:var(--main-green-light);
     color: var(--all-text);
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -98,7 +101,11 @@ body{
     font-size: 128px;
     padding: 272px 0;
     margin-bottom: 0;
-    
+    background-image: url(../images/main-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .header-container{
@@ -134,12 +141,42 @@ body{
     gap: 100px;
 }
 
+.cheff-images{
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--main-green-light), 
+                -16px 16px 0 2px var(--secondary)
+}
+
 .new-format{
     margin-bottom: 42px;
 }
 
-.section-3-and-4-h2-margin-botom{
+.section-3-h2-margin-botom{
+    margin:0 auto 80px;
+    max-width: 540px;
+    text-align: center;
+    
+}
+
+.section-4-h2-margin-botom {
     margin-bottom: 80px;
+    text-align: center;
+}
+
+.section-3-psevdo-element::before{
+    display: block;
+    width: 352px;
+    border: 2px solid var(--psevdo-line);
+    content: '';
+
+}
+
+.section-3-psevdo-element::after {
+    display: block;
+    width: 352px;
+    border: 2px solid var(--psevdo-line);
+    content: '';
+
 }
 
 .section-4-h2-mar-bot{
@@ -206,24 +243,53 @@ body{
     font-weight: 300;
     font-size: 14px;
     line-height: 100%;
+    color: var(--main-green-light);
 }
 
 .flex-section-3-ul{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    
 }
 
-.flex-section-3-ul-li{   
-    flex-basis: calc((100% - 40px) / 3);
-    
-    border: #31261A solid 1px; /*    remove    */
+.flex-section-3-ul li{   
+    flex-basis: calc((100% - 40px) / 3);    
     border-radius: 10px;
-    padding: 24px;    
+    padding: 24px;
+    background-repeat: no-repeat;    
+    background-size: cover;
+    height: 444px;
+    background-image: linear-gradient(180deg,
+    rgba(49,38,26,0) 55.21%,
+    rgba(49, 38, 26, 0) 72.92%,
+    var(--all-text)    
+    );
+    
+}
+
+.background-format-1{
+background-image: url(../images/walrus.jpg);
+}
+
+.background-format-2{
+    background-image: url(../images/Horseshoe.jpg);
+}
+
+.background-format-3 {
+    background-image: url(../images/handlebar.jpg);
 }
 
 .text-above-form{
     color: var(--h2-span);
+}
+
+.footer{
+    background-image: url(../images/footer.png);
+    background-color: var(--all-text);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .agree-field{
