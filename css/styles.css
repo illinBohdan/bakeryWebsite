@@ -264,8 +264,30 @@ body{
     rgba(49,38,26,0) 55.21%,
     rgba(49, 38, 26, 0) 72.92%,
     var(--all-text)    
-    );
+    );    
+}
+
+.icon-arrow-batton{
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+    width: 44px;
+    height: 44px;
     
+}
+
+.icon-arrow{
+    display: inline-block;        
+    stroke-width: 2;
+    stroke: var(--all-text);
+    fill: var(--main-green-light);
+}
+
+.icon-arrow:hover {
+    display: inline-block;
+    stroke-width: 2;
+    stroke: var(--main-green-light);
+    fill: var(--all-text);
 }
 
 .background-format-1{
@@ -317,4 +339,12 @@ background-image: url(../images/walrus.jpg);
     color: var(--copyright);
     font-size: 14px;
     line-height: 100%;
+}
+
+.social-icons{
+    fill: var(--main-green-light);
+}
+
+.social-icons:hover {
+    fill: var(--main-green-dark);
 }
