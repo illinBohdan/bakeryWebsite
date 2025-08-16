@@ -40,7 +40,7 @@
     --secondary: #a18268;
 }
 
-*{
+*, ::before, ::after{
     box-sizing: border-box;
 }
 
@@ -267,6 +267,28 @@ body{
     );    
 }
 
+.section-cheff-flex{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.cheff-box{
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.cheff-flex{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.card-with-arrows{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
 .icon-arrow-batton{
     border-radius: 50%;
     border-color: transparent;
@@ -302,8 +324,24 @@ background-image: url(../images/walrus.jpg);
     background-image: url(../images/handlebar.jpg);
 }
 
+.contact-section{
+    padding-bottom: 96px;
+}
+
+.section-5-all{
+    display: flex;
+    gap: 32px;
+    flex-basis: calc((100%-32px)/2);
+    
+}
+
 .text-above-form{
     color: var(--h2-span);
+}
+
+.section-5-map{
+    flex-shrink: 0;
+    border-radius: 16px;
 }
 
 .footer{
@@ -312,6 +350,13 @@ background-image: url(../images/walrus.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 32px 0;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .agree-field{
@@ -343,6 +388,11 @@ background-image: url(../images/walrus.jpg);
 
 .social-icons{
     fill: var(--main-green-light);
+}
+
+.social-icons-flex{
+    display: flex;
+    gap: 22px;
 }
 
 .social-icons:hover {
