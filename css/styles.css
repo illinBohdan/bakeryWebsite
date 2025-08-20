@@ -151,19 +151,19 @@ body{
     margin-bottom: 42px;
 }
 
+
 .section-3-h2-margin-botom{
+    position: relative;
     margin:0 auto 80px;
     max-width: 540px;
     text-align: center;
     
 }
 
-.section-4-h2-margin-botom {
-    margin-bottom: 80px;
-    text-align: center;
-}
-
 .section-3-psevdo-element::before{
+    position: absolute;
+    left: -360px;
+    bottom: 24px;
     display: block;
     width: 352px;
     border: 2px solid var(--psevdo-line);
@@ -172,11 +172,19 @@ body{
 }
 
 .section-3-psevdo-element::after {
+    position: absolute;
+    right: -360px;
+    bottom: 24px;
     display: block;
     width: 352px;
     border: 2px solid var(--psevdo-line);
     content: '';
 
+}
+
+.section-4-h2-margin-botom {
+    margin-bottom: 80px;
+    text-align: center;
 }
 
 .section-4-h2-mar-bot{
@@ -345,6 +353,7 @@ background-image: url(../images/walrus.jpg);
 }
 
 .footer{
+    position: relative;
     background-image: url(../images/footer.png);
     background-color: var(--all-text);
     background-repeat: no-repeat;
@@ -397,4 +406,63 @@ background-image: url(../images/walrus.jpg);
 
 .social-icons:hover {
     fill: var(--main-green-dark);
+}
+
+.footer::before,
+.footer::after{
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    content: '';
+}
+
+
+footer::before{
+    background-image: url(../images/bread-left.png);
+    
+    width: 180px;
+    height: 120px;
+    left: 0;    
+}
+
+footer::after {
+    background-image: url(../images/bread-right.png);
+    width: 378px;
+    height: 188px;
+    right: 0;    
+}
+
+/* ----------------------------modal window------------------------- */
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal{
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--main-green-light);
+    border-radius: 32px;
+
+}
+
+.modal-btn-close{
+    position: absolute;
+    right: 40px;
+    top: 40px;
 }
