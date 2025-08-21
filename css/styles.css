@@ -30,6 +30,16 @@
     src: url('../fonts/poppins-v23-latin-900.woff2') format('woff2');
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 :root{
     --main-green-dark:#819B57;
     --main-green-light: #FAF4EA;
@@ -206,6 +216,8 @@ body{
 
 .section-4-h2-mar-bot{
     margin-bottom: 16px;
+    line-height: 1.3;
+    font-size: 63px;
 }
 
 .top-menu-flex{
@@ -238,6 +250,7 @@ body{
     font-size: 18px;
     line-height: 100%;
     padding: 16px 32px;
+    margin-bottom: 24px;
 }
 
 .call-button:active {
@@ -364,7 +377,7 @@ background-image: url(../images/walrus.jpg);
 .section-5-all{
     display: flex;
     gap: 32px;
-    flex-basis: calc((100%-32px)/2);
+    flex-basis: calc((100% - 32px) / 2);
     
 }
 
@@ -396,6 +409,7 @@ background-image: url(../images/walrus.jpg);
 .agree-field{
     font-size: 12px;
     line-height: 100%;
+    text-align: center;
 }
 
 .agree-field span{
@@ -459,6 +473,9 @@ footer::after {
 
 /* ----------------------------modal window------------------------- */
 
+
+
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -486,11 +503,69 @@ footer::after {
     max-height: 880px;
     background-color: var(--main-green-light);
     border-radius: 32px;
+    padding: 128px;
+    text-align: center;
+    
+}
 
+.modal-title {
+    line-height: 1.3;
+    min-width: 633px;
+    margin-bottom: 8px;
+}
+
+.uber-title{
+    font-family: Roboto;
+    line-height: 1;
+    margin-bottom: 72px;
+    
 }
 
 .modal-btn-close{
     position: absolute;
     right: 40px;
     top: 40px;
+}
+
+.text-under-button{
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--all-text);
+    max-width: 213px;
+    margin: 0 auto;
+}
+
+.text-under-button a {
+    
+    color: var(--all-text);
+}
+
+
+
+/* -----------------FORM------------------------ */
+.form-field{
+    margin-bottom: 32px;
+}
+
+.label{
+    display: block;
+
+}
+.input{
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+}
+
+.input::placeholder{
+    color: var(--secondary);
+    
+}
+
+.center{
+    text-align: center;
 }

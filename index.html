@@ -180,9 +180,52 @@
               <p class="text-above-form">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
-              <button class="call-button" type="button">
-                Замовити дзвінок
-              </button>
+              <form action="" name="contact-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                  <label class="label visually-hidden" for="user-name"
+                    >Ім'я</label
+                  >
+                  <input
+                    class="input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ім'я"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="label visually-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
+              </form>
+
+              <div class="center">
+                <button class="call-button" type="button">
+                  Замовити дзвінок
+                </button>
+              </div>
               <p class="agree-field">
                 Натискаючи на кнопку я погоджуюсь
                 <span>з політикою конфіденційності</span>
@@ -262,6 +305,52 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="uber-title">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form action="" name="modal-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="label visually-hidden" for="user-name">Ім'я</label>
+            <input
+              class="input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ім'я"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="label visually-hidden" for="user-tel">Телефон</label>
+            <input
+              class="input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Телефон"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="label visually-hidden" for="user-email"
+              >Електронна пошта</label
+            >
+            <input
+              class="input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+            />
+          </div>
+        </form>
+
+        <button class="call-button" type="submit">Замовити дзвінок</button>
+        <p class="text-under-button">
+          Натискаючи на кнопку я погоджуюсь
+          <a href="3">з політикою конфіденційності</a>
+        </p>
       </div>
     </div>
 
