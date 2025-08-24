@@ -293,7 +293,7 @@ body{
 .flex-section-3-ul li{   
     flex-basis: calc((100% - 40px) / 3);    
     border-radius: 10px;
-    padding: 24px;
+    /* padding: 24px; */
     background-repeat: no-repeat;    
     background-size: cover;
     height: 444px;
@@ -303,10 +303,15 @@ body{
     var(--all-text)    
     );    
     transition: transform 0.3s;
+   
 }
 
 .flex-section-3-ul li:hover{
     transform: scale(1.05);
+    background-image: linear-gradient(180deg,
+                rgba(49, 38, 26, 0) 55.21%,
+                rgba(49, 38, 26, 0) 72.92%,
+                var(--all-text));
 }
 
 .section-cheff-flex{
@@ -358,8 +363,22 @@ body{
     rotate: 180deg;
 }
 
-.background-format-1{
-background-image: url(../images/walrus.jpg);
+.format-card{
+    position: relative;
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.background-format{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
 }
 
 .background-format-2{
